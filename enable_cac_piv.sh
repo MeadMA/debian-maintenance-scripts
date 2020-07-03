@@ -23,7 +23,7 @@ if (( $EUID != 0 )); then
 fi
 
 # Install required packages
-apt install libccid opensc libnss3-tools
+apt -y install libccid opensc libnss3-tools
 
 # Download DoD certificates
 pushd /tmp
